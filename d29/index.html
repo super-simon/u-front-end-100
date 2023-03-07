@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main class="main">
+      <form action="/" method="GET">
+        <section class="section-help">
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="name">Your Name</label>
+              <input type="text" name="name" id="name" required />
+            </li>
+            <li>
+              <label for="email">Your E-Mail Address</label>
+              <input type="text" name="email" id="email" required />
+            </li>
+            <li>
+              <label for="phone">Your Phone Number</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                required
+                minlength="5"
+              />
+            </li>
+            <li>
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+            </li>
+          </ul>
+        </section>
+        <section class="section-find">
+          <label for="find-question">How did you find us</label>
+          <select name="find-question" id="find-question" required>
+            <option value="internet">Via internet</option>
+            <option value="online-ads">Via online ads</option>
+            <option value="offline-ads">Via offline ads</option>
+          </select>
+        </section>
+        <section class="section-reply">
+          <h2>How should we replay?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply-method"
+                id="reply-call"
+                required
+              />
+              <label for="reply-call">Call me</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply-method"
+                id="reply-email"
+                required
+              />
+              <label for="reply-email">Send me an email</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply-method"
+                id="reply-dont"
+                required
+              />
+              <label for="reply-dont">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+        <section class="section-terms">
+          <div class="form-control-inline">
+            <input type="checkbox" name="terms" id="terms" />
+            <label for="terms">Accept Terms</label>
+          </div>
+        </section>
+        <section class="buttons">
+          <div>
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
